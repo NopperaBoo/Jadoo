@@ -1,0 +1,76 @@
+@media only screen and (max-width: 1024px) {
+  header {
+    background-position: right;
+  }
+  .container {
+    width: 80vw;
+  }
+  
+}
+@media only screen and (max-width: 768px) {
+    
+    html {
+      font-size: 8px;
+    }
+    .container {
+      width: 80%;
+      margin: 0 auto;
+    }
+    .header_top {
+      background-color: transparent;
+      position: static;
+      /* display: none; */
+    }
+    .header img {
+      /* height: 100%; */
+      width: 50%;
+  }
+    .top_menu {
+        grid-template-columns: 10% auto;
+        justify-content: center;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    .category, .partners{
+      grid-template-columns: auto auto;
+      justify-content: center;
+      gap: 1rem;
+    }
+    
+    .booking, #testimonials {
+      grid-template-columns: auto;
+      justify-content: center;
+    }
+  }
+  @media only screen and (max-width: 425px) {
+    body {
+      background-color: ghostwhite;
+    }
+    .container {
+      width: 80vw;
+    }
+    header {
+      background-image: none;
+    }
+    html {
+      font-size: 6px;
+    }
+    .top_menu {
+      display: flex;
+      justify-content: space-between;
+    }
+    nav ul {
+      display: none;
+    }
+    #burger_menu {
+      width: 40%;
+      visibility: visible;
+      display: block;
+    }
+    .footer_grid {
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-content: space-around;
+    }
+    
+  }
